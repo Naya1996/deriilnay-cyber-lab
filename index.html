@@ -1,0 +1,344 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080d18">
+<title>DERiiLNAY CYBER LAB</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #080d18;
+  color: #e8f0ff;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+}
+
+header {
+  padding: 24px 18px;
+  background: #101a2b;
+  border-bottom: 1px solid #24415c;
+}
+
+.logo {
+  color: #37e6ad;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  color: #8ca5bd;
+  font-size: 12px;
+  margin-top: 7px;
+}
+
+main {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+.hero {
+  padding: 25px;
+  border: 1px solid #1c5260;
+  border-radius: 16px;
+  background: linear-gradient(135deg,#112c39,#101a2b);
+  margin-bottom: 25px;
+}
+
+.hero h1 {
+  color: #37e6ad;
+  font-size: 25px;
+  margin-bottom: 12px;
+}
+
+.hero p {
+  color: #b6c8d8;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.status {
+  display: inline-block;
+  margin-top: 16px;
+  color: #37e6ad;
+  font-size: 12px;
+  border: 1px solid #24765f;
+  padding: 7px 12px;
+  border-radius: 20px;
+}
+
+h2 {
+  font-size: 18px;
+  margin: 25px 0 15px;
+}
+
+.tools {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 12px;
+}
+
+.tool {
+  background: #111c2d;
+  border: 1px solid #263b52;
+  border-radius: 13px;
+  padding: 18px 14px;
+}
+
+.tool .icon {
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+.tool h3 {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #37e6ad;
+}
+
+.tool p {
+  font-size: 12px;
+  color: #9eb1c5;
+  line-height: 1.5;
+}
+
+.panel {
+  background: #111c2d;
+  padding: 18px;
+  border-radius: 14px;
+  border: 1px solid #263b52;
+  margin-top: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 13px;
+  margin: 12px 0;
+  background: #080d18;
+  border: 1px solid #31506c;
+  color: white;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+button {
+  width: 100%;
+  background: #16a77d;
+  color: #061711;
+  border: none;
+  padding: 13px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.result {
+  margin-top: 13px;
+  font-size: 13px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+footer {
+  text-align: center;
+  padding: 30px 15px;
+  color: #70869d;
+  font-size: 11px;
+}
+
+@media(max-width:360px) {
+  .tools {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">DERiiLNAY CYBER LAB</div>
+  <div class="subtitle">CYBER SECURITY LEARNING ENVIRONMENT</div>
+</header>
+
+<main>
+
+<section class="hero">
+  <h1>WELCOME, CYBER LEARNER</h1>
+  <p>
+    Laboratorium pembelajaran keamanan siber.
+    Pelajari jaringan, keamanan akun, phishing,
+    dan perlindungan perangkat secara legal.
+  </p>
+  <div class="status">● SYSTEM ONLINE — LEARNING MODE</div>
+</section>
+
+<h2>SECURITY MODULES</h2>
+
+<section class="tools">
+
+  <div class="tool">
+    <div class="icon">🔎</div>
+    <h3>LINK SCANNER</h3>
+    <p>Belajar mengenali karakteristik tautan mencurigakan.</p>
+  </div>
+
+  <div class="tool">
+    <div class="icon">🔐</div>
+    <h3>PASSWORD CHECKER</h3>
+    <p>Periksa kekuatan kata sandi secara lokal.</p>
+  </div>
+
+  <div class="tool">
+    <div class="icon">🎣</div>
+    <h3>PHISHING LAB</h3>
+    <p>Pelajari cara mengenali situs penipuan.</p>
+  </div>
+
+  <div class="tool">
+    <div class="icon">🌐</div>
+    <h3>NETWORK LAB</h3>
+    <p>Pelajari dasar komunikasi jaringan komputer.</p>
+  </div>
+
+  <div class="tool">
+    <div class="icon">📱</div>
+    <h3>TWO DEVICE LAB</h3>
+    <p>Simulasi komunikasi dua perangkat dengan izin.</p>
+  </div>
+
+  <div class="tool">
+    <div class="icon">🛡️</div>
+    <h3>DEFENSE LAB</h3>
+    <p>Pelajari cara melindungi perangkat Android.</p>
+  </div>
+
+</section>
+
+<section class="panel">
+  <h2>LINK SECURITY CHECK</h2>
+  <p style="font-size:13px;color:#9eb1c5">
+    Masukkan tautan untuk pemeriksaan karakteristik dasar.
+    Jangan memasukkan tautan pribadi.
+  </p>
+
+  <input
+    type="url"
+    id="linkInput"
+    placeholder="https://contoh.com"
+  >
+
+  <button onclick="checkLink()">ANALYZE LINK</button>
+
+  <div class="result" id="linkResult"></div>
+</section>
+
+<section class="panel">
+  <h2>PASSWORD STRENGTH TEST</h2>
+  <p style="font-size:13px;color:#9eb1c5">
+    Gunakan kata sandi contoh, bukan kata sandi akun asli.
+    Pemeriksaan dilakukan di browser.
+  </p>
+
+  <input
+    type="password"
+    id="passInput"
+    placeholder="Masukkan kata sandi contoh"
+    autocomplete="off"
+  >
+
+  <button onclick="checkPassword()">CHECK PASSWORD</button>
+
+  <div class="result" id="passResult"></div>
+</section>
+
+</main>
+
+<footer>
+  DERiiLNAY CYBER LAB<br>
+  Educational Cyber Security Project<br>
+  Authorized Testing Only © 2026
+</footer>
+
+<script>
+function checkLink() {
+  const value = document.getElementById("linkInput").value.trim();
+  const result = document.getElementById("linkResult");
+
+  if (!value) {
+    result.textContent = "Masukkan tautan terlebih dahulu.";
+    return;
+  }
+
+  try {
+    const url = new URL(value);
+
+    if (!["http:", "https:"].includes(url.protocol)) {
+      throw new Error();
+    }
+
+    let warnings = [];
+
+    if (url.protocol !== "https:") {
+      warnings.push("Tidak menggunakan HTTPS.");
+    }
+
+    if (url.username || url.password) {
+      warnings.push("Mengandung informasi login dalam URL.");
+    }
+
+    if (url.hostname.includes("xn--")) {
+      warnings.push("Mengandung format domain internasional yang perlu diperiksa.");
+    }
+
+    result.textContent = warnings.length
+      ? "PERLU DIPERIKSA: " + warnings.join(" ")
+      : "Pemeriksaan dasar selesai. Tidak ditemukan indikator sederhana. Ini bukan jaminan bahwa situs aman.";
+
+  } catch {
+    result.textContent = "Format tautan tidak valid.";
+  }
+}
+
+function checkPassword() {
+  const pass = document.getElementById("passInput").value;
+  const result = document.getElementById("passResult");
+
+  if (!pass) {
+    result.textContent = "Masukkan kata sandi contoh.";
+    return;
+  }
+
+  let score = 0;
+
+  if (pass.length >= 12) score++;
+  if (/[a-z]/.test(pass) && /[A-Z]/.test(pass)) score++;
+  if (/[0-9]/.test(pass)) score++;
+  if (/[^A-Za-z0-9]/.test(pass)) score++;
+
+  const levels = [
+    "LEMAH",
+    "KURANG KUAT",
+    "CUKUP",
+    "KUAT",
+    "KOMPLEKS"
+  ];
+
+  result.textContent =
+    "Hasil pemeriksaan karakteristik: " +
+    levels[score] +
+    ". Gunakan kata sandi unik dan panjang untuk setiap akun.";
+}
+</script>
+
+</body>
+</html>
